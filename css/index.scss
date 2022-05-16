@@ -1,0 +1,94 @@
+//Debug section start
+
+@mixin debug {
+    border: solid 2px black;
+}
+
+//Debug section ends/Front-end section starts
+
+.container{
+    @include debug;
+
+    margin:             auto;
+    top:                2.5vh;
+    bottom:             2.5vh;
+    display:            block;
+    background-color:  white;
+    width:              90vw;
+    height:             85vh;
+    text-align:         center;
+
+    .WKS-Header{
+        @include debug;
+
+        margin:             0.2em auto 0.2em auto;
+        text-decoration:    underline;
+        text-align:         center;
+        color:              white;
+        background-color: red;
+        width:              80%;
+    }
+
+    .info{
+        @include debug;
+
+        display: flex;
+
+        .weather{
+            @include debug;
+
+            display:    block;
+            width:      100%;
+            .block{
+                @include debug;
+
+                margin:     auto;
+                display:    block;
+                width:      100%;
+            }
+        }
+        .busstops{
+            width:      100%;
+            display:    block;
+
+            .block{
+                @include debug;
+
+                margin:     auto;
+                display:    block;
+                width:      100%;
+                height:     100%;
+
+                .bus-icon{
+                    height: 40px;
+                    width: 40px;
+                    margin: auto 0.4em auto auto;
+                }
+
+                .TFI-stat{
+                    height: 8vh;
+                    width:  100%;
+
+                    .bus-stop{
+                        margin: auto 5% auto 5%;
+                        height: 2em;
+                        width: 2em;
+                        text-decoration: none;
+                    }
+                }
+                .TFI-stop{
+                    height: 4vh;
+                    width:  100%;
+
+                    .bus-stop{
+                        margin: auto 5% auto 5%;
+                        height: 2em;
+                        width: 2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Front-end section ends
